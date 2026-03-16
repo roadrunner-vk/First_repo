@@ -63,21 +63,33 @@ If you see **"On branch master"** or **"On branch main"**, it worked! Git is now
 
 ---
 
-## Step 5 — Add files and make your first commit
+## Step 5 — Stage your files
 
-A **commit** is like taking a photo of your work at a specific moment so you can go back to it later.
+Before Git can save your work, you need to tell it **which files** to include. This is called **staging**.
 
 ```bash
-# Tell Git to track all files in the folder
 git add .
-
-# Take the "photo" with a message describing what you did
-git commit -m "Initial commit"
 ```
+
+The `.` means "add everything in this folder". Think of it like putting all your drawings into an envelope before sealing it.
+
+You can check what's been staged by running `git status` again.
 
 ---
 
-## Step 6 — Create a new repo on GitHub
+## Step 6 — Make your first commit
+
+A **commit** is like sealing that envelope and writing a note on the front describing what's inside.
+
+```bash
+git commit -m "Initial commit"
+```
+
+The `-m` flag lets you write a short message explaining what changed. Always write something meaningful!
+
+---
+
+## Step 8 — Create a new repo on GitHub
 
 1. Go to [github.com](https://github.com) and sign in
 2. Click the **"+"** button in the top-right corner → **"New repository"**
@@ -93,7 +105,7 @@ Copy that URL — you'll need it in the next step.
 
 ---
 
-## Step 7 — Link your local repo to GitHub
+## Step 9 — Link your local repo to GitHub
 
 Tell your local Git repo where GitHub is (called adding a "remote"):
 
@@ -105,7 +117,7 @@ Think of `origin` as a nickname for the GitHub address.
 
 ---
 
-## Step 8 — Rename your branch to main (recommended)
+## Step 10 — Rename your branch to main (recommended)
 
 GitHub uses `main` as the default branch name. To match:
 
@@ -115,7 +127,7 @@ git branch -M main
 
 ---
 
-## Step 9 — Push to GitHub
+## Step 11 — Push to GitHub
 
 Now send your local commits up to GitHub:
 
@@ -130,7 +142,7 @@ You may be prompted to sign in to GitHub the first time.
 
 ---
 
-## Step 10 — Verify it worked
+## Step 12 — Verify it worked
 
 Go to `https://github.com/your-username/First_repo` in your browser — your files should be there! 🎉
 
